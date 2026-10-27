@@ -126,6 +126,9 @@ export async function renderCalendar(
     case 'pt-BR':
       fcLocalePromise = import('@fullcalendar/core/locales/pt-br.js');
       break;
+    case 'ru':
+      fcLocalePromise = import('@fullcalendar/core/locales/ru.js');
+      break;
     default:
       fcLocalePromise = Promise.resolve(null);
   }
